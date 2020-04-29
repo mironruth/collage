@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>Webcam Image Collage</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen">
+  <script src="fabric.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+<section id="cameraContentarea">
+	<h1>
+		Smile for the Camera
+	</h1>
+	<p>
+		Take the picture to be used for the image mashup.
+	</p>
+  <div class="camera">
+    <video id="video" playsinline>Video stream not available.</video>
+    <button id="startButton">Take photo</button>
+  </div>
+  <!-- this canvas will be hidden. It stores the image from the camera -->
+  <canvas id="canvasPhoto">
+  </canvas>
+
+  <div class="output">
+    <img id="photo" alt="The screen capture will appear in this box.">
+  </div>
+
+  <p id='fred'>When you are happy with your picture, <button id="startMixingButton">Start Mixing</button>
+</section>
+
+<section id="canvasMixArea">
+  <canvas id="c" width="800" height="600"></canvas>
+  <img src="images/lips.png" id="lips" alt="" width="100px">
+  <img src="images/glasses.png" id="glasses" alt="" width="100px">
+  <img src="images/horns.png" id="horns" alt="" width="100px">
+  <p><a id="downloadButton" download="" href="">SAVE IMAGE</a><button id="returnButton">New Photo</button></p>
+
+</section>
+<script src="cameraCollage.js">
+</script>
+
+</body>
+</html>

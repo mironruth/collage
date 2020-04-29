@@ -1,0 +1,90 @@
+* {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.displayNone{display: none;}
+.displayBlock{display: block;}
+body {
+  background-color: #888;
+  color: #ddd;
+  rgb(247, 217, 255)
+}
+
+h1 {
+  color: white;
+}
+
+#video {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+  /* help with camera reversal */
+  transform: rotateY(180deg);
+}
+
+#photo {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+}
+
+#canvasPhoto {
+  display: none;
+}
+
+.camera {
+  /* width: 340px; */
+  display: inline-block;
+}
+
+.output {
+  /* width: 340px; */
+  display: inline-block;
+  vertical-align: top;
+}
+
+button, #downloadButton{
+  background-color: rgba(240, 0, 230, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  color: rgba(255, 255, 255, 1.0);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+#startButton {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 102px;
+}
+section{
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  width: 800px;
+
+}
+#cameraContentarea {
+  background-color: #666;
+}
+
+#startMixingButton, #downloadButton, #returnButton {
+  background-color: blue;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+/* ------------------- */
+#canvasMixArea {
+  background-color: #333;
+}
+#c{
+  background-image: url('images/checker.png');
+}
